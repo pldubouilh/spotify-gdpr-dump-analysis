@@ -1,6 +1,6 @@
 # spotify-gdpr-dump-analysis
 
-Local analysis of complete spofity streaming dataset (endsong_*.json). Made in 3 hours alongside with chatGPT, fixing bugs as they appeared.
+Local analysis of complete spotify streaming dataset (endsong_*.json). Made in 3 hours alongside with chatGPT, fixing bugs as they appeared.
 
 That's a whole lot of data 👀
 
