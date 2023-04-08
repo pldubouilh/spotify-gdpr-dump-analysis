@@ -2,6 +2,8 @@
 
 Local analysis of complete spotify streaming dataset (endsong_*.json). Made in 3 hours alongside with chatGPT, fixing bugs as they appeared.
 
+Ask for [your GDPR streaming data dump here](https://www.spotify.com/account/privacy/). It take a couple days to come.
+
 That's a whole lot of data 👀
 
 ``` sh
