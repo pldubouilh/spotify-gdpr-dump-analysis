@@ -11,7 +11,7 @@ That's a whole lot of data 👀
 $ pip install geoip2 basemap pandas matplotlib
 
 # get geodb for local ip lookup
-$ curl -L -o city.mmdb https://github.com/lysenkobv/maxmind-geolite2-database/raw/master/city.mmdb
+$ curl -L -o city.mmdb https://git.io/GeoLite2-City.mmdb
 
 # create sqlite3 database from json dump
 $ python makedb.py datafolder/
