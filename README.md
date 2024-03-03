@@ -8,12 +8,14 @@ That's a whole lot of data 👀
 
 ``` sh
 # deps
-$ pip install geoip2 basemap pandas matplotlib
+$ python -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
 
 # get geodb for local ip lookup
 $ curl -L -o city.mmdb https://git.io/GeoLite2-City.mmdb
 
-# create sqlite3 database from json dump
+# create sqlite3 database from json dump. datafolder should contain all your endsong_*.json files
 $ python makedb.py datafolder/
 
 # run analysis !
@@ -31,11 +33,11 @@ df                     city         country  count
 
 ```
 $ python top-songs-per-country.py
-DE                                                 La femme d'argent                        Air
-DE  Piano Concerto No. 3 in D Minor, Op. 30: I. Allegro ma non tanto        Sergei Rachmaninoff
-DE                                La mer, L. 109: II. Jeux de vagues             Claude Debussy
-DE                                                   Samba da Bencao             Bebel Gilberto
-DE                                      Merry Christmas Mr. Lawrence           Ryuichi Sakamoto
-DE                                                        WEIGHT OFF                 KAYTRANADA
+DE                                                 La femme d'argent                   Air
+DE  Piano Concerto No. 3 in D Minor, Op. 30: I. Allegro ma non tanto   Sergei Rachmaninoff
+DE                                La mer, L. 109: II. Jeux de vagues        Claude Debussy
+DE                                                   Samba da Bencao        Bebel Gilberto
+DE                                      Merry Christmas Mr. Lawrence      Ryuichi Sakamoto
+DE                                                        WEIGHT OFF            KAYTRANADA
 ...
 ```
